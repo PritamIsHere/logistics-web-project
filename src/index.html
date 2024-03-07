@@ -1,0 +1,576 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- remix icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  Swiper cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <!-- navbar -->
+        <nav class="flex justify-between fixed w-full bg-white z-50">
+            <!-- left -->
+            <img src="https://omlogistics.co.in/wp-content/webp-express/webp-images/uploads/2023/11/logo-e1700897900588.png.webp"
+                alt="" width="210" class="pl-14 py-3">
+
+            <!-- right -->
+            <div class="w-full">
+                <!-- top -->
+                <div
+                    class="flex gap-3 pr-14 bg-gradient-to-r from-white to-blue-800 text-white justify-end items-center h-1/2">
+                    <div class="flex gap-2 text-lg">
+                        <i class="ri-smartphone-line"></i>
+                        <p>011 4597 0302/303</p>
+                    </div>
+                    <div class="flex gap-2 text-lg">
+                        <i class="ri-mail-line"></i>
+                        <p>example123@email.com</p>
+                    </div>
+                </div>
+
+                <!-- bottom -->
+                <div class="flex pr-14 bg-white text-white justify-end items-center h-1/2">
+                    <div class='pr-14'>
+
+                        <!-- dropdown  -->
+                        <div class="group inline-block relative">
+                            <button class="bg-whit text-gray-700 font-semibold py-2 px-2 inline-flex items-center">
+                                <span class="mr-1">About us</span>
+                                <i class="ri-arrow-drop-down-line text-lg"></i>
+                            </button>
+                            <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                                <li class="">
+                                    <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">1</a>
+                                </li>
+                                <li class="">
+                                    <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">2</a>
+                                </li>
+                                <li class="">
+                                    <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">3</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- dropdown  -->
+                        <div class="group inline-block relative">
+                            <button class="bg-whit text-gray-700 font-semibold py-2 px-2 inline-flex items-center">
+                                <span class="mr-1">What We offer</span>
+                                <i class="ri-arrow-drop-down-line text-lg"></i>
+                            </button>
+                            <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                                <li class="">
+                                    <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">1</a>
+                                </li>
+                                <li class="">
+                                    <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">2</a>
+                                </li>
+                                <li class="">
+                                    <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">3</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- dropdown  -->
+                        <div class="group inline-block relative">
+                            <button class="bg-whit text-gray-700 font-semibold py-2 px-2 inline-flex items-center">
+                                <span class="mr-1">Industries We Serve</span>
+                                <i class="ri-arrow-drop-down-line text-lg"></i>
+                            </button>
+                            <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                                <li class="">
+                                    <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">1</a>
+                                </li>
+                                <li class="">
+                                    <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">2</a>
+                                </li>
+                                <li class="">
+                                    <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">3</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- dropdown  -->
+                        <div class="group inline-block relative">
+                            <button class="bg-whit text-gray-700 font-semibold py-2 px-2 inline-flex items-center">
+                                <span class="mr-1">Retail Express</span>
+                                <i class="ri-arrow-drop-down-line text-lg"></i>
+                            </button>
+                            <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                                <li class="">
+                                    <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">1</a>
+                                </li>
+                                <li class="">
+                                    <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">2</a>
+                                </li>
+                                <li class="">
+                                    <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">3</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- dropdown  -->
+                        <div class="group inline-block relative">
+                            <button class="bg-whit text-gray-700 font-semibold py-2 px-2 inline-flex items-center">
+                                <span class="mr-1">Media Room</span>
+                                <i class="ri-arrow-drop-down-line text-lg"></i>
+                            </button>
+                            <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                                <li class="">
+                                    <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">1</a>
+                                </li>
+                                <li class="">
+                                    <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">2</a>
+                                </li>
+                                <li class="">
+                                    <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">3</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- dropdown  -->
+                        <div class="group inline-block relative">
+                            <button class="bg-whit text-gray-700 font-semibold py-2 px-2 inline-flex items-center">
+                                <span class="mr-1">Contact us</span>
+                                <i class="ri-arrow-drop-down-line text-lg"></i>
+                            </button>
+                            <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                                <li class="">
+                                    <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">1</a>
+                                </li>
+                                <li class="">
+                                    <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">2</a>
+                                </li>
+                                <li class="">
+                                    <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">3</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- dropdown  -->
+                        <div class="group inline-block relative">
+                            <button class="bg-whit text-gray-700 font-semibold py-2 px-2 inline-flex items-center">
+                                <span class="mr-1">Join us</span>
+                                <i class="ri-arrow-drop-down-line text-lg"></i>
+                            </button>
+                            <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                                <li class="">
+                                    <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">1</a>
+                                </li>
+                                <li class="">
+                                    <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">2</a>
+                                </li>
+                                <li class="">
+                                    <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">3</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page 1 -->
+        <div id="page1"
+            class="w-full h-screen bg-[url('https://omlogistics.co.in/wp-content/uploads/2024/02/Website-Cover-Image-web-scaled.webp')] bg-cover bg-center flex justify-between">
+            <!-- left -->
+            <div class="w-1/2 h-full flex flex-col items-center justify-center">
+
+                <!-- form -->
+                <div class="p-2 bg-[#000000b4] rounded-lg flex flex-col gap-4">
+                    <!-- top buttons -->
+                    <div class=" gap-3 flex">
+                        <button
+                            class="bg-blue-600 text-lg leading-4 px-4 py-2 rounded-lg font-semibold text-white">Track<br>Shipment</button>
+                        <button
+                            class="bg-blue-600 text-lg leading-4 px-4 py-2 rounded-lg font-semibold text-white">Branch<br>Locator</button>
+                        <button
+                            class="bg-blue-600 text-lg leading-4 px-4 py-2 rounded-lg font-semibold text-white">Track<br>Shipment</button>
+                    </div>
+                    <!-- bottom form -->
+                    <div class="w-full ">
+                        <p class="text-lg text-white">Track Shipment</p>
+                        <form class="w-full flex justify-between gap-2">
+                            <input type="number" name="shipmentId" class="w-full rounded-lg outline-none border-0 px-2">
+                            <button type="submit"
+                                class="px-4 py-1 bg-blue-600 rounded-lg text-white text-lg">Track</button>
+                        </form>
+                    </div>
+                </div>
+                <form>
+
+                </form>
+
+            </div>
+
+            <!-- right -->
+            <div class="h-full flex flex-col justify-center gap-1">
+
+                <!-- Facebook -->
+                <div
+                    class="bg-blue-700 text-4xl text-white rounded p-1 shadow flex items-center justify-center cursor-pointer ">
+                    <i class="ri-facebook-circle-fill"></i>
+                </div>
+
+                <!-- Twitter-X -->
+                <div
+                    class="bg-black text-4xl text-white rounded p-1 shadow flex items-center justify-center cursor-pointer">
+                    <a href=""><i class="ri-twitter-x-line"></i></a>
+
+                </div>
+
+                <!-- Instagram -->
+                <div
+                    class="bg-[url('https://preview.colorkit.co/gradient/f9ce34-ee2a7b-6228d7.png?static=true')] text-4xl text-white rounded p-1 shadow flex items-center justify-center cursor-pointer bg-cover bg-center">
+                    <a href=""><i class="ri-instagram-line"></i></a>
+                </div>
+
+                <!-- Linkedin -->
+                <div
+                    class="bg-blue-700 text-4xl text-white rounded p-1 shadow flex items-center justify-center cursor-pointer bg-cover bg-center">
+                    <a href=""><i class="ri-linkedin-box-fill"></i></a>
+                </div>
+
+                <!-- What's App -->
+                <div
+                    class="bg-green-500 text-4xl text-white rounded p-1 shadow flex items-center justify-center cursor-pointer bg-cover bg-center">
+                    <a href=""><i class="ri-whatsapp-line"></i></a>
+                </div>
+
+                <!-- youtube -->
+                <div
+                    class="bg-red-600 text-4xl text-white rounded p-1 shadow flex items-center justify-center cursor-pointer bg-cover bg-center">
+                    <a href=""><i class="ri-youtube-fill"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 2 -->
+        <div id="page2" class="w-full  px-20 py-5 flex flex-col gap-9">
+
+            <p class="uppercase text-5xl text-blue-900">What we offer</p>
+            <!-- swipper -->
+            <section class="section slider-section flex justify-center items-center">
+                <div class="container slider-column">
+                    <div class="swiper swiper-slider">
+                        <div class="swiper-wrapper flex  justify-start">
+
+                            <!-- slide -->
+                            <div class="swiper-slide overflow-hidden rounded-xl flex flex-col gap-6">
+                                <!-- head -->
+                                <div class="img">
+                                    <img src="https://omlogistics.co.in/wp-content/webp-express/webp-images/uploads/elementor/thumbs/Warehouse-qi8fgt7hf6atl91yojx3pumsyvlpiyzl2qe5vyxc0o.jpg.webp"
+                                        class="hover:scale-[1.2] duration-150" alt="">
+                                </div>
+                                <!-- body -->
+                                <div class="flex flex-col items-center gap-6">
+                                    <h5 class="text-2xl text-blue-800 font-semibold">Werehouse</h5>
+
+                                    <p class="text-center leading-6 text-md ">Lorem ipsum dolor sit amet,
+                                        elit.
+                                        Soluta fugit aut
+                                        numquam, voluptas beatae aliquam. Sequi sint saepe soluta qui repudiandae maxime
+                                        mollitia nemo adipisci. Sit quaerat praesentium culpa doloremque quibusdam nulla
+                                        aliquid, fugiat perspiciatis.</p>
+                                </div>
+                                <!-- foot -->
+                                <div class="flex justify-center items-center">
+                                    <button class="rounded-full px-5 py-2 bg-blue-700 text-white">Explore</button>
+                                </div>
+                            </div>
+
+                            <!-- slide -->
+                            <div class="swiper-slide overflow-hidden rounded-xl flex flex-col gap-6">
+                                <!-- head -->
+                                <div class="img">
+                                    <img src="https://omlogistics.co.in/wp-content/webp-express/webp-images/uploads/elementor/thumbs/Warehouse-qi8fgt7hf6atl91yojx3pumsyvlpiyzl2qe5vyxc0o.jpg.webp"
+                                        class="hover:scale-[1.2] duration-150" alt="">
+                                </div>
+                                <!-- body -->
+                                <div class="flex flex-col items-center gap-6">
+                                    <h5 class="text-2xl text-blue-800 font-semibold">Werehouse</h5>
+
+                                    <p class="text-center leading-6 text-md ">Lorem ipsum dolor sit amet,
+                                        elit.
+                                        Soluta fugit aut
+                                        numquam, voluptas beatae aliquam. Sequi sint saepe soluta qui repudiandae maxime
+                                        mollitia nemo adipisci. Sit quaerat praesentium culpa doloremque quibusdam nulla
+                                        aliquid, fugiat perspiciatis.</p>
+                                </div>
+                                <!-- foot -->
+                                <div class="flex justify-center items-center">
+                                    <button class="rounded-full px-5 py-2 bg-blue-700 text-white">Explore</button>
+                                </div>
+                            </div>
+
+                            <!-- slide -->
+                            <div class="swiper-slide overflow-hidden rounded-xl flex flex-col gap-6">
+                                <!-- head -->
+                                <div class="img">
+                                    <img src="https://omlogistics.co.in/wp-content/webp-express/webp-images/uploads/elementor/thumbs/Warehouse-qi8fgt7hf6atl91yojx3pumsyvlpiyzl2qe5vyxc0o.jpg.webp"
+                                        class="hover:scale-[1.2] duration-150" alt="">
+                                </div>
+                                <!-- body -->
+                                <div class="flex flex-col items-center gap-6">
+                                    <h5 class="text-2xl text-blue-800 font-semibold">Werehouse</h5>
+
+                                    <p class="text-center leading-6 text-md ">Lorem ipsum dolor sit amet,
+                                        elit.
+                                        Soluta fugit aut
+                                        numquam, voluptas beatae aliquam. Sequi sint saepe soluta qui repudiandae maxime
+                                        mollitia nemo adipisci. Sit quaerat praesentium culpa doloremque quibusdam nulla
+                                        aliquid, fugiat perspiciatis.</p>
+                                </div>
+                                <!-- foot -->
+                                <div class="flex justify-center items-center">
+                                    <button class="rounded-full px-5 py-2 bg-blue-700 text-white">Explore</button>
+                                </div>
+                            </div>
+
+                            <!-- slide -->
+                            <div class="swiper-slide overflow-hidden rounded-xl flex flex-col gap-6">
+                                <!-- head -->
+                                <div class="img">
+                                    <img src="https://omlogistics.co.in/wp-content/webp-express/webp-images/uploads/elementor/thumbs/Warehouse-qi8fgt7hf6atl91yojx3pumsyvlpiyzl2qe5vyxc0o.jpg.webp"
+                                        class="hover:scale-[1.2] duration-150" alt="">
+                                </div>
+                                <!-- body -->
+                                <div class="flex flex-col items-center gap-6">
+                                    <h5 class="text-2xl text-blue-800 font-semibold">Werehouse</h5>
+
+                                    <p class="text-center leading-6 text-md ">Lorem ipsum dolor sit amet,
+                                        elit.
+                                        Soluta fugit aut
+                                        numquam, voluptas beatae aliquam. Sequi sint saepe soluta qui repudiandae maxime
+                                        mollitia nemo adipisci. Sit quaerat praesentium culpa doloremque quibusdam nulla
+                                        aliquid, fugiat perspiciatis.</p>
+                                </div>
+                                <!-- foot -->
+                                <div class="flex justify-center items-center">
+                                    <button class="rounded-full px-5 py-2 bg-blue-700 text-white">Explore</button>
+                                </div>
+                            </div>
+
+                            <!-- slide -->
+                            <div class="swiper-slide overflow-hidden rounded-xl flex flex-col gap-6">
+                                <!-- head -->
+                                <div class="img">
+                                    <img src="https://omlogistics.co.in/wp-content/webp-express/webp-images/uploads/elementor/thumbs/Warehouse-qi8fgt7hf6atl91yojx3pumsyvlpiyzl2qe5vyxc0o.jpg.webp"
+                                        class="hover:scale-[1.2] duration-150" alt="">
+                                </div>
+                                <!-- body -->
+                                <div class="flex flex-col items-center gap-6">
+                                    <h5 class="text-2xl text-blue-800 font-semibold">Werehouse</h5>
+
+                                    <p class="text-center leading-6 text-md ">Lorem ipsum dolor sit amet,
+                                        elit.
+                                        Soluta fugit aut
+                                        numquam, voluptas beatae aliquam. Sequi sint saepe soluta qui repudiandae maxime
+                                        mollitia nemo adipisci. Sit quaerat praesentium culpa doloremque quibusdam nulla
+                                        aliquid, fugiat perspiciatis.</p>
+                                </div>
+                                <!-- foot -->
+                                <div class="flex justify-center items-center">
+                                    <button class="rounded-full px-5 py-2 bg-blue-700 text-white">Explore</button>
+                                </div>
+                            </div>
+
+                            <!-- slide -->
+                            <div class="swiper-slide overflow-hidden rounded-xl flex flex-col gap-6">
+                                <!-- head -->
+                                <div class="img">
+                                    <img src="https://omlogistics.co.in/wp-content/webp-express/webp-images/uploads/elementor/thumbs/Warehouse-qi8fgt7hf6atl91yojx3pumsyvlpiyzl2qe5vyxc0o.jpg.webp"
+                                        class="hover:scale-[1.2] duration-150" alt="">
+                                </div>
+                                <!-- body -->
+                                <div class="flex flex-col items-center gap-6">
+                                    <h5 class="text-2xl text-blue-800 font-semibold">Werehouse</h5>
+
+                                    <p class="text-center leading-6 text-md ">Lorem ipsum dolor sit amet,
+                                        elit.
+                                        Soluta fugit aut
+                                        numquam, voluptas beatae aliquam. Sequi sint saepe soluta qui repudiandae maxime
+                                        mollitia nemo adipisci. Sit quaerat praesentium culpa doloremque quibusdam nulla
+                                        aliquid, fugiat perspiciatis.</p>
+                                </div>
+                                <!-- foot -->
+                                <div class="flex justify-center items-center">
+                                    <button class="rounded-full px-5 py-2 bg-blue-700 text-white">Explore</button>
+                                </div>
+                            </div>
+
+                            <!-- slide -->
+                            <div class="swiper-slide overflow-hidden rounded-xl flex flex-col gap-6">
+                                <!-- head -->
+                                <div class="img">
+                                    <img src="https://omlogistics.co.in/wp-content/webp-express/webp-images/uploads/elementor/thumbs/Warehouse-qi8fgt7hf6atl91yojx3pumsyvlpiyzl2qe5vyxc0o.jpg.webp"
+                                        class="hover:scale-[1.2] duration-150" alt="">
+                                </div>
+                                <!-- body -->
+                                <div class="flex flex-col items-center gap-6">
+                                    <h5 class="text-2xl text-blue-800 font-semibold">Werehouse</h5>
+
+                                    <p class="text-center leading-6 text-md ">Lorem ipsum dolor sit amet,
+                                        elit.
+                                        Soluta fugit aut
+                                        numquam, voluptas beatae aliquam. Sequi sint saepe soluta qui repudiandae maxime
+                                        mollitia nemo adipisci. Sit quaerat praesentium culpa doloremque quibusdam nulla
+                                        aliquid, fugiat perspiciatis.</p>
+                                </div>
+                                <!-- foot -->
+                                <div class="flex justify-center items-center">
+                                    <button class="rounded-full px-5 py-2 bg-blue-700 text-white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <span class="swiper-pagination"></span>
+                        <span class="swiper-button-prev"></span>
+                        <span class="swiper-button-next"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Page 3 -->
+        <div id="page3" class="w-full h-screen flex">
+            <!-- left -->
+            <div
+                class="w-1/2 h-full bg-[url('https://images.unsplash.com/photo-1704799191531-085f46e6221c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-center bg-cover">
+            </div>
+
+            <!-- right -->
+            <div class="w-1/2 h-full bg-green-500"></div>
+        </div>
+
+        <!-- page 4 -->
+        <div id="page4" class="w-full p-20 flex flex-col items-center ">
+            <!-- top -->
+            <div class="flex flex-col items-center justify-center gap-5 w-3/4 py-10">
+                <h1 class="text-4xl font-semibold text-blue-800">Our Strength</h1>
+                <p class="text-center text-xl text-slate-500">We are recognized for our expertise in streamlined supply
+                    chain and
+                    logistics
+                    services. Our
+                    establishment specializes in delivering customer-centric solutions, standing as a trusted companion
+                    on the path to success.</p>
+            </div>
+
+            <!-- bottom -->
+            <div class="w-full flex justify-evenly py-10">
+
+                <div class="flex flex-col gap-3 items-center justify-center">
+                    <h1 class="text-5xl font-bold"><span>27,000</span>+</h1>
+                    <p class="text-lg font-semibold leading-6">Serviceable<br>Pin Codes</p>
+                </div>
+
+                <div class="flex flex-col gap-3 items-center justify-center">
+                    <h1 class="text-5xl font-bold"><span>27,000</span>+</h1>
+                    <p class="text-lg font-semibold leading-6">Serviceable<br>Pin Codes</p>
+                </div>
+
+                <div class="flex flex-col gap-3 items-center justify-center">
+                    <h1 class="text-5xl font-bold"><span>27,000</span>+</h1>
+                    <p class="text-lg font-semibold leading-6">Serviceable<br>Pin Codes</p>
+                </div>
+
+                <div class="flex flex-col gap-3 items-center justify-center">
+                    <h1 class="text-5xl font-bold"><span>27,000</span>+</h1>
+                    <p class="text-lg font-semibold leading-6">Serviceable<br>Pin Codes</p>
+                </div>
+
+                <div class="flex flex-col gap-3 items-center justify-center">
+                    <h1 class="text-5xl font-bold"><span>27,000</span>+</h1>
+                    <p class="text-lg font-semibold leading-6">Serviceable<br>Pin Codes</p>
+                </div>
+
+                <div class="flex flex-col gap-3 items-center justify-center">
+                    <h1 class="text-5xl font-bold"><span>27,000</span>+</h1>
+                    <p class="text-lg font-semibold leading-6">Serviceable<br>Pin Codes</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="w-full p-5 bg-blue-700 flex flex-col justify-center items-center gap-7">
+            <!-- top -->
+            <div class="w-full flex justify-between">
+                <img src="https://omlogistics.co.in/wp-content/webp-express/webp-images/uploads/2023/09/OM-Logistics-1.png.webp"
+                    alt="" width="250">
+
+                <div class="text-white flex flex-col">
+                    <h3 class="text-2xl text-white py-4">About Us</h3>
+                    <a href="#">Our Growth Story</a>
+                    <a href="#">Core Team</a>
+                    <a href="#">Vision, Mission & Our Values</a>
+                    <a href="#">Our Pilot</a>
+                </div>
+
+                <div class="text-white flex flex-col">
+                    <h3 class="text-2xl text-white py-4">About Us</h3>
+                    <a href="#">Our Growth Story</a>
+                    <a href="#">Core Team</a>
+                    <a href="#">Vision, Mission & Our Values</a>
+                    <a href="#">Our Pilot</a>
+                </div>
+
+                <div class="text-white flex flex-col">
+                    <h3 class="text-2xl text-white py-4">About Us</h3>
+                    <a href="#">Our Growth Story</a>
+                    <a href="#">Core Team</a>
+                    <a href="#">Vision, Mission & Our Values</a>
+                    <a href="#">Our Pilot</a>
+                </div>
+
+                <div class="text-white flex flex-col">
+                    <h3 class="text-2xl text-white py-4">About Us</h3>
+                    <a href="#">Our Growth Story</a>
+                    <a href="#">Core Team</a>
+                    <a href="#">Vision, Mission & Our Values</a>
+                    <a href="#">Our Pilot</a>
+                </div>
+
+            </div>
+            <!-- bottom -->
+            <p class="text-white text-xl">OM Logistics Limited 2024 – All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+
+</html>
+
+<script src="../script.js"></script>
