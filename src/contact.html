@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- remix icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  Swiper cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main">
+        <!-- navbar -->
+        <nav class="flex justify-between fixed w-full bg-white z-50">
+            <!-- left -->
+            <img src="https://omlogistics.co.in/wp-content/webp-express/webp-images/uploads/2023/11/logo-e1700897900588.png.webp"
+                alt="" width="210" class="pl-14 py-3">
+
+            <!-- right -->
+            <div class="w-full">
+                <!-- top -->
+                <div
+                    class="flex gap-3 pr-14 bg-gradient-to-r from-white to-blue-800 text-white justify-end items-center h-1/2">
+                    <div class="flex gap-2 text-lg">
+                        <i class="ri-smartphone-line"></i>
+                        <p>011 4597 0302/303</p>
+                    </div>
+                    <div class="flex gap-2 text-lg">
+                        <i class="ri-mail-line"></i>
+                        <p>example123@email.com</p>
+                    </div>
+                </div>
+
+                <!-- bottom -->
+                <div class="flex pr-14 bg-white text-white justify-end items-center h-1/2">
+                    <div class='pr-14'>
+
+                        <!-- dropdown  -->
+                        <div class="group inline-block relative">
+                            <button class="bg-whit text-gray-700 font-semibold py-2 px-2 inline-flex items-center">
+                                <span class="mr-1">About us</span>
+                                <i class="ri-arrow-drop-down-line text-lg"></i>
+                            </button>
+                            <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                                <li class="">
+                                    <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">1</a>
+                                </li>
+                                <li class="">
+                                    <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">2</a>
+                                </li>
+                                <li class="">
+                                    <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">3</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- dropdown  -->
+                        <div class="group inline-block relative">
+                            <button class="bg-whit text-gray-700 font-semibold py-2 px-2 inline-flex items-center">
+                                <span class="mr-1">What We offer</span>
+                                <i class="ri-arrow-drop-down-line text-lg"></i>
+                            </button>
+                            <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                                <li class="">
+                                    <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">1</a>
+                                </li>
+                                <li class="">
+                                    <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">2</a>
+                                </li>
+                                <li class="">
+                                    <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">3</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- dropdown  -->
+                        <div class="group inline-block relative">
+                            <button class="bg-whit text-gray-700 font-semibold py-2 px-2 inline-flex items-center">
+                                <span class="mr-1">Industries We Serve</span>
+                                <i class="ri-arrow-drop-down-line text-lg"></i>
+                            </button>
+                            <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                                <li class="">
+                                    <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">1</a>
+                                </li>
+                                <li class="">
+                                    <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">2</a>
+                                </li>
+                                <li class="">
+                                    <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">3</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- dropdown  -->
+                        <div class="group inline-block relative">
+                            <button class="bg-whit text-gray-700 font-semibold py-2 px-2 inline-flex items-center">
+                                <span class="mr-1">Retail Express</span>
+                                <i class="ri-arrow-drop-down-line text-lg"></i>
+                            </button>
+                            <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                                <li class="">
+                                    <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">1</a>
+                                </li>
+                                <li class="">
+                                    <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">2</a>
+                                </li>
+                                <li class="">
+                                    <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">3</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- dropdown  -->
+                        <div class="group inline-block relative">
+                            <button class="bg-whit text-gray-700 font-semibold py-2 px-2 inline-flex items-center">
+                                <span class="mr-1">Media Room</span>
+                                <i class="ri-arrow-drop-down-line text-lg"></i>
+                            </button>
+                            <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                                <li class="">
+                                    <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">1</a>
+                                </li>
+                                <li class="">
+                                    <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">2</a>
+                                </li>
+                                <li class="">
+                                    <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">3</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- dropdown  -->
+                        <div class="group inline-block relative">
+                            <button class="bg-whit text-gray-700 font-semibold py-2 px-2 inline-flex items-center">
+                                <span class="mr-1">Contact us</span>
+                                <i class="ri-arrow-drop-down-line text-lg"></i>
+                            </button>
+                            <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                                <li class="">
+                                    <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">1</a>
+                                </li>
+                                <li class="">
+                                    <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">2</a>
+                                </li>
+                                <li class="">
+                                    <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">3</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- dropdown  -->
+                        <div class="group inline-block relative">
+                            <button class="bg-whit text-gray-700 font-semibold py-2 px-2 inline-flex items-center">
+                                <span class="mr-1">Join us</span>
+                                <i class="ri-arrow-drop-down-line text-lg"></i>
+                            </button>
+                            <ul class="absolute hidden text-gray-700 pt-1 group-hover:block">
+                                <li class="">
+                                    <a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">1</a>
+                                </li>
+                                <li class="">
+                                    <a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">2</a>
+                                </li>
+                                <li class="">
+                                    <a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap"
+                                        href="#">3</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="page1">
+            <div class="w-full h-screen bg-green-500">
+                <!-- img -->
+            </div>
+        </div>
+
+        <div id="page2" class="px-24 py-20">
+            <!-- top -->
+            <div class="w-full flex flex-col gap-3">
+                <h2 class="text-5xl text-blue-900">Contact Us</h2>
+                <hr class="border-1 border-blue-950 w-[15%]">
+                <p class="text-slate-500 text-lg font-semibold">Do you have any queries or need more information? Let us
+                    know how we
+                    can help
+                    you; our dedicated team is constantly working to answer and resolve your queries.</p>
+            </div>
+
+            <!-- bottom -->
+            <div class="w-full flex items-center justify-center py-10">
+                <form class="px-6 py-5 bg-slate-400 w-2/4 flex flex-col items-start rounded-lg gap-4">
+                    <!-- Full Name -->
+                    <div class="w-full flex flex-col gap-1">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" name="name" id="name" required class="rounded-lg px-2 py-1 outline-none">
+                        <span id="N-msg"></span>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="w-full flex flex-col gap-1">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required class="rounded-lg px-2 py-1 outline-none">
+                        <span id="email-msg"></span>
+                    </div>
+
+                    <!-- contact -->
+                    <div class="w-full flex flex-col gap-1">
+                        <label for="contact">Contact:</label>
+                        <input type="text" name="contact" id="contact" required
+                            class="rounded-lg px-2 py-1 outline-none">
+                        <span id="contact-msg"></span>
+                    </div>
+
+                    <!-- Query: -->
+                    <div class="w-full flex flex-col gap-1">
+                        <label for="query">Query:</label>
+                        <input type="text" name="query" id="query" class="rounded-lg px-2 py-1 outline-none">
+                    </div>
+
+                    <!-- Your Message: -->
+                    <div class="w-full flex flex-col gap-1">
+                        <label for="message">Your Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="5"
+                            class="rounded-lg px-2 py-1 outline-none"></textarea>
+                    </div>
+
+                    <!-- submit btn -->
+                    <button type="submit"
+                        class="bg-blue-600 px-5 py-2 text-white font-semibold rounded-full">Send</button>
+
+                </form>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="w-full p-5 bg-blue-700 flex flex-col justify-center items-center gap-7">
+            <!-- top -->
+            <div class="w-full flex justify-between">
+                <img src="https://omlogistics.co.in/wp-content/webp-express/webp-images/uploads/2023/09/OM-Logistics-1.png.webp"
+                    alt="" width="250">
+
+                <div class="text-white flex flex-col">
+                    <h3 class="text-2xl text-white py-4">About Us</h3>
+                    <a href="#">Our Growth Story</a>
+                    <a href="#">Core Team</a>
+                    <a href="#">Vision, Mission & Our Values</a>
+                    <a href="#">Our Pilot</a>
+                </div>
+
+                <div class="text-white flex flex-col">
+                    <h3 class="text-2xl text-white py-4">About Us</h3>
+                    <a href="#">Our Growth Story</a>
+                    <a href="#">Core Team</a>
+                    <a href="#">Vision, Mission & Our Values</a>
+                    <a href="#">Our Pilot</a>
+                </div>
+
+                <div class="text-white flex flex-col">
+                    <h3 class="text-2xl text-white py-4">About Us</h3>
+                    <a href="#">Our Growth Story</a>
+                    <a href="#">Core Team</a>
+                    <a href="#">Vision, Mission & Our Values</a>
+                    <a href="#">Our Pilot</a>
+                </div>
+
+                <div class="text-white flex flex-col">
+                    <h3 class="text-2xl text-white py-4">About Us</h3>
+                    <a href="#">Our Growth Story</a>
+                    <a href="#">Core Team</a>
+                    <a href="#">Vision, Mission & Our Values</a>
+                    <a href="#">Our Pilot</a>
+                </div>
+
+            </div>
+            <!-- bottom -->
+            <p class="text-white text-xl">OM Logistics Limited 2024 – All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+
+</html>
