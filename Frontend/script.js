@@ -72,7 +72,75 @@ $(document).ready(function () {
                 return obj;
             }
         });
+        if (result.length != 0) {
 
-        console.log(result);
+            result = result[0]
+            console.log(result);
+            var date = result.DeliveryDate
+            var date = date.split('T')[0]
+
+            if (date == '0000-00-00') {
+                date = 'Not Delivered'
+            }
+
+            $('#modal-body').append(`<table
+            class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <thead
+                class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col" class="px-6 py-3">
+                        Name
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Shipment Date
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Pickup Address
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Destination
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Shiping Address
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Status
+                    </th>
+                    <th scope="col" class="px-6 py-3">
+                        Delivery Date
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr
+                    class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <th scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        ${result.Name}
+                    </th>
+                    <td class="px-6 py-4">
+                        ${result.ShipmentDate}
+                    </td>
+                    <td class="px-6 py-4">
+                        ${result.PickupAddress}
+                    </td>
+                    <td class="px-6 py-4">
+                        ${result.Destination}
+                    </td>
+                    <td class="px-6 py-4">
+                        ${result.ShippingAddress}
+                    </td>
+                    <td class="px-6 py-4">
+                        ${result.Status}
+                    </td>
+                    <td class="px-6 py-4">
+                        ${date}
+                    </td>
+                </tr>
+            </tbody>
+        </table>`);
+        } else {
+            $('#modal-body').append('<p>Invalid ID</p>');
+        }
     });
 });
