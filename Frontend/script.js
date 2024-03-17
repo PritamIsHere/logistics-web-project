@@ -72,6 +72,7 @@ $(document).ready(function () {
                 return obj;
             }
         });
+
         if (result.length != 0) {
 
             result = result[0]
@@ -84,8 +85,8 @@ $(document).ready(function () {
             }
 
             $('#modal-body').append(`<table
-            class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead
+            class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400" id="mid">
+            <theadaz
                 class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                 <tr>
                     <th scope="col" class="px-6 py-3">
@@ -110,7 +111,7 @@ $(document).ready(function () {
                         Delivery Date
                     </th>
                 </tr>
-            </thead>
+            </theadaz>
             <tbody>
                 <tr
                     class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
@@ -140,7 +141,11 @@ $(document).ready(function () {
             </tbody>
         </table>`);
         } else {
-            $('#modal-body').append('<p>Invalid ID</p>');
+            $('#modal-body').append('<p id="mid">Invalid ID</p>');
         }
+
+        setTimeout(() => {
+            $('#mid').remove();
+        }, 3000);
     });
 });
