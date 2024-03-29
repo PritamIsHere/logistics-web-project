@@ -63,6 +63,7 @@ $(document).ready(function () {
         }
     });
 
+    // index page
     $('#search').submit(function (e) {
         e.preventDefault();
 
@@ -87,12 +88,12 @@ $(document).ready(function () {
             $('#modal-body').append(`<table
             class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400" id="mid">
             <theadaz
-                class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                <tr>
-                    <th scope="col" class="px-6 py-3">
-                        Name
-                    </th>
-                    <th scope="col" class="px-6 py-3">
+            class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+            <th scope="col" class="px-6 py-3">
+            Name
+            </th>
+            <th scope="col" class="px-6 py-3">
                         Shipment Date
                     </th>
                     <th scope="col" class="px-6 py-3">
@@ -141,11 +142,14 @@ $(document).ready(function () {
             </tbody>
         </table>`);
         } else {
-            $('#modal-body').append('<p id="mid">Invalid ID</p>');
+            $('#modal-body').append('<p id="mid" class="text-xl font-semibold text-red-500">Invalid ID</p>');
         }
-
-        setTimeout(() => {
-            $('#mid').remove();
-        }, 3000);
     });
+    $('#close').click(function () {
+        $('#mid').remove();
+
+    });
+
+    // Admin page
+
 });
